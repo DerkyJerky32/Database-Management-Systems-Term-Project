@@ -1,6 +1,13 @@
 Phase 1: Problem Analysis and Requirement Specification (3/25/19)
 A problem statement:
-	I will be building a database that will address the inventory, employees, and customer orders of an online video game store. This store will mainly specialize in the sales of video games and hardware, but also carry movies as well as CDs. The online store needs a database since they are just starting up, they will need this database built from the ground up to store inventory items, employee names, numbers, and salary, and customer names, email addresses, addresses, order numbers, and order totals. This database will be composed of seven separate tables: one for customers, one for employees, one for inventory, one for hardware, one for games, one for movies, one for music. 
+	I will be building a database that will address the inventory, 
+		employees, and customer orders of an online video game store. 
+		This store will mainly specialize in the sales of video games and hardware, 
+		but also carry movies as well as CDs. The online store needs a database since they are just starting up, 
+		they will need this database built from the ground up to store inventory items, employee names, numbers, 
+		and salary, and customer names, email addresses, addresses, order numbers, and order totals. This database will 
+		be composed of seven separate tables: one for customers, one for employees, one for inventory, one for hardware, 
+		one for games, one for movies, one for music. 
 Requirements/rules:
 1.	Employees must have a name (first and last), an employee ID, and a salary in the database
 2.	Employees can be managers
@@ -15,7 +22,8 @@ Requirements/rules:
 
 Phase 2: Database Design (4/6/2019)
 •	Inventory (Total_Amnt, TotHardware_Amnt, TotCD_Amnt, TotGames_Amnt, TotMovies_Amnt)
-This table stores the amount of all products we have by category (hardware, CDs, games, movies). This table carries employee ID information so it can tell who has the authority to edit the data.
+This table stores the amount of all products we have by category (hardware, CDs, games, movies). 
+This table carries employee ID information so it can tell who has the authority to edit the data.
 
 •	Employees (Emp_Name, Emp_ID, Emp_Salary, Manager)
 This table stores the information of employees. All attributes are dependent on the Emp_ID
@@ -24,13 +32,17 @@ This table stores the information of employees. All attributes are dependent on 
 This table stores all the customer information. 
 
 •	Hardware (Hardware_Name, Hardware_Make, Hardware_ID, Hardware_Amnt, Hardware_Price)
-This table stores the information of the hardware available in the store. TotHardware_Amnt references the Inventory table, linking the hardware to the inventory
+This table stores the information of the hardware available in the store. 
+TotHardware_Amnt references the Inventory table, linking the hardware to the inventory
 
 •	Games (Game_Title, Game_Publ, Game_ID, Game_Price, Game_Amount)
-This table stores the information of the games available in the store. TotGames_Amnt references the Inventory table, linking the games to the inventory
+This table stores the information of the games available in the store. 
+TotGames_Amnt references the Inventory table, linking the games to the inventory
 
 •	Movies (Movie_Title, Movie_Studio, Movie_ID, Movie_Price, Movie_Amount)
-This table stores the information of the movies available in the store. TotMovies_Amnt references the Inventory table, linking the movies to the inventory
+This table stores the information of the movies available in the store. 
+TotMovies_Amnt references the Inventory table, linking the movies to the inventory
 
 •	CDS (CD_Artist, CD_Title, CD_RecComp, CD_ID, CD_Price, CD_Amount)
-This table stores the information of the movies available in the store.  TotCD_Amnt references the Inventory table, linking the CDs to the inventory.
+This table stores the information of the movies available in the store.  
+TotCD_Amnt references the Inventory table, linking the CDs to the inventory.
